@@ -1,0 +1,628 @@
+@font-face {
+font-family: "fipps";
+src: url("fonts/fipps/Fipps-Regular.otf") format("opentype")
+}
+@font-face {
+font-family: "computer-pixel";
+src: url("fonts/computer_pixel_7/computer_pixel-7.ttf")
+}
+@font-face {
+font-family: "pressstart2p";
+src: url("fonts/codeman38_press-start-2p/PressStart2P.ttf");
+}
+
+@keyframes playnimate {
+
+  0% {color: black;}
+  40% {color:darkgreen;}
+  60% {color: red;}
+
+    body {
+        margin: 0;
+    }
+    
+}
+
+.playing {
+  animation-name: playnimate;
+  animation-duration: 2.22222s;
+  animation-iteration-count: infinite;
+}
+
+#page {
+  display: grid;
+  width: 100%;
+  height: 100vh;
+  grid-template: [header-left] "nav nav" 60px [header-right]
+                 [main-left]   "main  main"  [main-right]
+                 [footer-left] "foot  foot" 30px  [footer-right]
+                 / 120px 1fr;
+}
+
+#navi {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+#linkers {
+  display: flex;
+}
+body {
+    background-color: black;
+}
+
+
+
+#artwork {
+    display: grid;
+    grid-template-rows: 5vh 10vh 10vh;
+}
+
+#little {
+  margin-left: 22%;
+}
+
+#dancehall {
+    margin-left: 25%;
+
+}
+
+
+
+/*#dancehall:hover {
+
+}*/
+
+#sound {
+  margin-left: 25%;
+}
+
+#buttons {
+    display: flex;
+    justify-content: center;
+
+}
+
+#playButton {
+    display: flex;
+    justify-content: center;
+    padding: 3vh;
+    margin-top: 10vh;
+
+}
+
+#playicon {
+ /*height : 15vh;*/
+ padding-left: -50px;
+}
+
+
+
+button {
+    background-color: darkgreen;
+    color: white;
+    padding: 7px 15px;
+    border: 5px solid black;
+    letter-spacing: 2px;
+    font-family: 'computer-pixel', cursive;
+    font-size:  2.71796875vw;
+    font-weight: 300;
+    margin: 10px;
+
+}
+
+#navi, #linkers, footer {
+  font-family: 'pressstart2p', cursive;
+}
+
+#navi {
+  font-size: 12px;
+}
+
+#animation {
+    position:relative;
+    z-index: 500;
+}
+
+#foreground {
+    position: relative;
+    z-index: 800;
+}
+
+
+header {
+  background-color: lime;
+  grid-area: head;
+}
+
+nav {
+  background-color: Black;
+  grid-area: nav;
+    color: white;
+    position: relative;
+    z-index: 400;
+}
+
+main {
+    margin-top: auto;
+    margin-bottom: auto;
+  background-color: yellow;
+  grid-area: main;
+  height: 70vh;
+
+}
+
+footer {
+  grid-column: foot;
+    color: white;
+/*    font-size: 10px;*/
+/*    position: relative;*/
+/*    z-index: 200;*/
+}
+
+h1 {
+  font-family: 'fipps';
+    font-size: 5.5125vw;
+}
+
+h3 {
+  font-family: 'computer-pixel';
+    font-size: 4.5828125vw;
+}
+
+ul {
+  text-decoration: none;
+  list-style: none;
+
+}
+li {
+
+  padding: 5px 20px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+li > a:hover {
+  text-decoration: underline;
+}
+
+img {
+    height: 6.665625vw;
+/*    position: relative;*/
+/*    z-index: 300;*/
+}
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 666px) 
+{ 
+    @font-face {
+    font-family: "fipps";
+    src: url("fonts/fipps/Fipps-Regular.otf") format("opentype")
+    }
+    @font-face {
+    font-family: "computer-pixel";
+    src: url("fonts/computer_pixel_7/computer_pixel-7.ttf")
+    }
+    @font-face {
+    font-family: "pressstart2p";
+    src: url("fonts/codeman38_press-start-2p/PressStart2P.ttf");
+    }
+
+    @keyframes playnimate {
+
+      0% {color: black;}
+      40% {color:darkgreen;}
+      60% {color: red;}
+
+        body {
+            margin: 0;
+        }
+
+    }
+
+    .playing {
+      animation-name: playnimate;
+      animation-duration: 2.22222s;
+      animation-iteration-count: infinite;
+    }
+
+    #page {
+      display: grid;
+      width: 100%;
+      height: 100vh;
+      grid-template: [header-left] "nav nav" 60px [header-right]
+                     [main-left]   "main  main"  [main-right]
+                     [footer-left] "foot  foot" 30px  [footer-right]
+                     / 120px 1fr;
+    }
+
+    #navi {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+        position: relative;
+
+    }
+
+    #linkers {
+      display: none;
+    }
+    body {
+        background-color: black;
+    }
+
+    /*
+    canvas {
+        position:fixed; 
+        top:0; 
+        left:0; 
+        z-index:1;
+    }
+    */
+
+
+    #artwork {
+        display: grid;
+        grid-template-rows: 5vh 10vh 10vh;
+        margin-left: -160px;
+    }
+
+    #little {
+      margin-left: 22%;
+    }
+
+    #dancehall {
+        margin-left: 25%;
+        margin-bottom: 30px;
+
+    }
+
+
+
+    /*#dancehall:hover {
+
+    }*/
+
+    #sound {
+      margin-left: 25%;
+    }
+
+    #buttons {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    #playButton {
+        display: flex;
+        justify-content: center;
+        padding: 1vh;
+        margin-top: 5vh;
+
+    }
+
+    #playicon {
+     /*height : 15vh;*/
+     padding-left: -50px;
+    }
+
+
+
+    button {
+        background-color: darkgreen;
+        color: white;
+        padding: 7px 15px;
+        border: 5px solid black;
+        letter-spacing: 2px;
+        font-family: 'computer-pixel', cursive;
+        font-size: 80px;
+        font-weight: 300;
+        margin: 50px 10px 15px 10px;
+
+    }
+
+    #navi, #linkers, footer {
+      font-family: 'pressstart2p', cursive;
+    }
+
+    #navi {
+      font-size: 12px;
+    }
+
+    #animation {
+        position:relative;
+        z-index: 500;
+    }
+
+    #foreground {
+        position: relative;
+        z-index: 800;
+    }
+
+
+    header {
+      background-color: lime;
+      grid-area: head;
+    }
+
+    nav {
+      background-color: Black;
+      grid-area: nav;
+        color: white;
+        position: relative;
+        z-index: 400;
+    }
+
+    main {
+        margin-top: auto;
+        margin-bottom: auto;
+      background-color: yellow;
+      grid-area: main;
+      height: 70vh;
+
+    }
+
+    footer {
+      grid-column: foot;
+        color: white;
+        font-size: 30px;
+        position: relative;
+        margin-bottom: 10px;
+    }
+
+    h1 {
+      font-family: 'fipps';
+        font-size: 100px;
+    }
+    
+    h2 {
+        font-size: 40px;
+        position: absolute;
+    }
+
+    h3 {
+      font-family: 'computer-pixel';
+        font-size: 100px;
+    }
+
+    ul {
+      text-decoration: none;
+      list-style: none;
+
+    }
+    li {
+
+      padding: 5px 20px;
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+    }
+
+    li > a:hover {
+      text-decoration: underline;
+    }
+
+    img {
+        height: 150px;
+        position: relative;
+        z-index: 300;
+    }
+    
+    canvas {
+        display: none;
+    }
+}
+
+@media only screen 
+  and (min-device-width: 667px) 
+  and (max-device-width: 1024px) 
+    {
+        @font-face {
+font-family: "fipps";
+src: url("fonts/fipps/Fipps-Regular.otf") format("opentype")
+}
+@font-face {
+font-family: "computer-pixel";
+src: url("fonts/computer_pixel_7/computer_pixel-7.ttf")
+}
+@font-face {
+font-family: "pressstart2p";
+src: url("fonts/codeman38_press-start-2p/PressStart2P.ttf");
+}
+
+@keyframes playnimate {
+
+  0% {color: black;}
+  40% {color:darkgreen;}
+  60% {color: red;}
+
+    body {
+        margin: 0;
+    }
+    
+}
+
+.playing {
+  animation-name: playnimate;
+  animation-duration: 2.22222s;
+  animation-iteration-count: infinite;
+}
+
+#page {
+  display: grid;
+  width: 100%;
+  height: 100vh;
+  grid-template: [header-left] "nav nav" 60px [header-right]
+                 [main-left]   "main  main"  [main-right]
+                 [footer-left] "foot  foot" 30px  [footer-right]
+                 / 120px 1fr;
+}
+
+#navi {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+#linkers {
+  display: flex;
+}
+body {
+    background-color: black;
+}
+
+
+
+#artwork {
+    display: grid;
+    grid-template-rows: 5vh 10vh 10vh;
+}
+
+#little {
+  margin-left: 22%;
+}
+
+#dancehall {
+    margin-left: 25%;
+
+}
+
+#sound {
+  margin-left: 25%;
+}
+
+#buttons {
+    display: flex;
+    justify-content: center;
+
+}
+
+#playButton {
+    display: flex;
+    justify-content: center;
+    padding: 3vh;
+    margin-top: 10vh;
+    margin-right 20px;
+
+}
+
+#playicon {
+ /*height : 15vh;*/
+ padding-left: -40px;
+}
+
+
+
+button {
+    background-color: darkgreen;
+    color: white;
+    padding: 7px 15px;
+    border: 5px solid black;
+    letter-spacing: 2px;
+    font-family: 'computer-pixel', cursive;
+    font-size:  2.71796875vw;
+    font-weight: 300;
+    margin: 10px;
+
+}
+
+#navi, #linkers, footer {
+  font-family: 'pressstart2p', cursive;
+}
+
+#navi {
+  font-size: 12px;
+}
+
+#animation {
+    position:relative;
+    z-index: 500;
+}
+
+#foreground {
+    position: relative;
+    z-index: 800;
+}
+
+
+header {
+  background-color: lime;
+  grid-area: head;
+}
+
+nav {
+  background-color: Black;
+  grid-area: nav;
+    color: white;
+    position: relative;
+    z-index: 400;
+}
+
+main {
+    margin-top: auto;
+    margin-bottom: auto;
+  background-color: yellow;
+  grid-area: main;
+  height: 70vh;
+
+}
+
+footer {
+  grid-column: foot;
+    color: white;
+    font-size: 10px;
+    position: relative;
+    z-index: 200;
+}
+
+h1 {
+  font-family: 'fipps';
+    font-size: 5.5125vw;
+}
+
+h3 {
+  font-family: 'computer-pixel';
+    font-size: 4.5828125vw;
+}
+
+ul {
+  text-decoration: none;
+  list-style: none;
+
+}
+li {
+
+  padding: 5px 20px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+li > a:hover {
+  text-decoration: underline;
+}
+
+img {
+    height: 6.665625vw;
+    position: relative;
+    z-index: 300;
+    margin-top: 20px;
+}
+        canvas {
+            display: none;
+        }
+    }
+
+
+
