@@ -358,6 +358,8 @@ img {
         color: white;
         position: relative;
         z-index: 400;
+      margin-top: 13em;
+      margin-left: 1em;
     }
 
     main {
@@ -374,7 +376,9 @@ img {
         color: white;
         font-size: 30px;
         position: relative;
-        margin-bottom: 10px;
+        margin-top: -6.6em;
+      margin-left: -1em;
+      
     }
 
     h1 {
